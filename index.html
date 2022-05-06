@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Finland en zo</title>
+  </head>
+
+  <!--Start Body-->
+
+  <body>
+    <!--Header + nav-->
+    <header>
+      <nav>
+        <div class="logoBox" onclick="goHome()">
+          <img src="./img/logo.png" alt="logo" class="logo" />
+          <p>Over Finland</p>
+        </div>
+
+        <div id="hamburger-icon" class="hamburger-icon hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links hide-mobile">
+          <a class="current-page" href="index.html">Home</a>
+          <a href="./typisch.html">Typisch Fins</a>
+          <a href="./finland-hotspots.html">Hotspots</a>
+          <div class="dropdown">
+            <button class="dropdown-btn">Over Finland<i class="arrow down"></i></button>
+            <div class="dropdown-content">
+              <a href="./finland-cultuur.html" class="dropdown-item">Cultuur</a>
+              <a href="./finland-taal.html" class="dropdown-item">Taal</a>
+            </div>
+          </div>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!--Nav mobile-->
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="./typisch.html">Typisch Fins</a>
+        </li>
+        <li>
+          <a href="./finland-hotspots.html">Hotspots</a>
+        </li>
+        <li>
+          <a href="./finland-taal.html">Taal</a>
+        </li>
+        <li>
+          <a href="./finland-cultuur.html">Cultuur</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Header banner-->
+
+    <section id="banner">
+      <h2 class="banner-title">Finland en zo</h2>
+    </section>
+
+    <!--Intro "In het kort"-->
+    <div class="container-main">
+      <div class="main-card">
+        <main>
+          <section>
+            <h2>Finse gronden</h2>
+            <div class="article-grid">
+              <article>
+                <h3>Van Scandinavië</h3>
+                <p>
+                  Om te beginnen ligt Finland in het mooie Scandinavië. Als noorderlijk land, of te wel: <span lang="fi"><b>pohjoinen maa</b></span>;
+                  zoals ze dat zeggen in het Fins. Naast Finland zijn hier ook Zweden, Noorwegen, 
+                  IJsland en Denemarken onderdeel van het mooie Scandinavië. 
+                </p>
+              </article>
+
+              <article>
+                <h3>Tot Finland</h3>
+                <p>
+                  Maar op deze website wil ik mij focussen op Finland. Het land van 
+                  Santa's village, rendieren, houten huizen, Moomins en Helsinki. 
+                  Er is zo veel te noemen, maar voor nu gaan we kort in op de hotpots, cultuur
+                  en taal. Voor een breder scala aan informatie kunt u zich ook laten informeren via:
+                  <a href="https://www.landenwijzer.nl/europa/finland/">www.landenwijzer.nl </a>
+                  of gaat u alvast op deze site naar de pagina <a href="./typisch.html">Typisch Fins >></a>
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <hr /><!--Intro Finse hotspots-->
+
+          <section>
+            <h2>Finse hotspots:</h2>
+            <div class="figure-grid">
+              <div class="container-hotspots">
+                <figure>
+                  <img src="./img/dogs.jpg" srcset="./img/dogs.jpg 2x" alt="Huskys"
+                  />
+                  <figcaption>
+                    <h3>Huski sleeën</h3>
+                    <p>
+                      Jouw vervoer is de huski. Getraint voor wedstrijden en brengt je
+                      dan ook zo van a naar b. Prachtig om te doen bij zonsondergang!
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="reverse">
+                  <img src="./img/ice-fishing.jpg" srcset="./img/ice-fishing.jpg 2x" alt="IJsvissen"
+                  />
+                  <figcaption>
+                    <h3>IJsvissen</h3>
+                    <p>
+                      IJsvissen vergt kracht, 
+                      of nee, uithoudingsvermogen. Je gooit namelijk niet <em>even</em> 
+                      je hengel uit, maar draait je weg naar een gat om in te vissen. 
+                      En dan is het nog maar afwachten of je wat vangt natuurlijk. 
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure>
+                  <img src="./img/santa_village.jpg" srcset="./img/santa_village.jpg 2x" alt="Santa/'s village"
+                  />
+                  <figcaption>
+                    <h3>Santa's village</h3>
+                    <p>
+                      Beleef de "warmste" dagen van het jaar op de koudste plek dicht bij
+                      de kerstman. Een echte beleving vooral rondom kerst.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="link-to">
+                <a class="to-hotspots" href="./finland-hotspots.html">Meer hotspots &nbsp; <i class="arrow right"></i></a>
+              </div>
+            </div>
+          </section>
+
+          <hr /><!--Foto / video grid-->
+
+          <section>
+            <h2>Media gallerij</h2>
+            <div class="photo-grid">
+
+              <picture class="parent parent-1">
+                <source media="(max-width:768px)" srcset="./img/finland.jpg" />
+                <img class="item x" src="./img/finland.jpg" alt="Finland van dichtbij" />
+              </picture>
+
+              <picture class="parent parent-2">
+                <source media="(max-width:768px)" srcset="./img/aurora.jpg" />
+                <img class="item x" src="./img/aurora.jpg" alt="Cup on beans" />
+              </picture>
+
+              <picture class="parent parent-3">
+                <source media="(max-width:768px)" srcset="./img/cabin.jpg" />
+                <img class="item x" src="./img/cabin.jpg" alt="Finse hut" />
+              </picture>
+
+              <div class="parent parent-4">
+                <video class="item video" src="./video/about_scandinavia.mp4" controls></video>
+              </div>
+
+              <div class="parent parent-5">
+                <iframe src="https://www.youtube.com/embed/kZwDLQ19qmI" 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </section>
+        
+        </main>
+      </div>
+    </div>
+
+    <!--Button up-->
+
+    <button class="button" onclick="goUp()">
+      Terug naar begin &nbsp; <i class="arrow up"> </i>
+    </button>
+
+    <!--Footer-->
+
+    <footer style="text-align: center;">
+      <p> © 2022 MAA = COUNTRY === FINNISH | email@email.com | Niet orginele content</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+            <a href="http://www.w3.org/Icons/valid-html20">
+              <img alt="Valid HTML2" src="http://www.w3.org/Icons/valid-html20.png">
+            </a>
+        </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>

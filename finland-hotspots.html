@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Finse hotspots</title>
+  </head>
+
+  <!--Start Body-->
+
+  <body>
+    <!--Header + nav-->
+    <header>
+      <nav>
+        <img src="./img/logo.png" alt="" class="icon logo" onclick="goHome()"/>
+
+        <div id="hamburger-icon" class="hamburger-icon hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links hide-mobile">
+          <a href="index.html">Home</a>
+          <a  href="./typisch.html">Typisch Fins</a>
+          <a class="current-page" href="./finland-hotspots.html">Hotspots</a>
+          <div class="dropdown">
+            <button class="dropdown-btn">Over Finland <i class="arrow down"></i></button>
+            <div class="dropdown-content">
+              <a href="./finland-cultuur.html" class="dropdown-item">Cultuur</a>
+              <a href="./finland-taal.html" class="dropdown-item">Taal</a>
+            </div>
+          </div>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!--Nav mobile-->
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="./typisch.html">Typisch Fins</a>
+        </li>
+        <li>
+          <a href="./finland-hotspots.html">Hotspots</a>
+        </li>
+        <li>
+          <a href="./finland-taal.html">Taal</a>
+        </li>
+        <li>
+          <a href="./finland-cultuur.html">Cultuur</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Header banner-->
+
+    <section id="banner">
+      <h2 class="banner-title">Finse hotspots</h2>
+    </section>
+
+    <div class="container-main">
+      <div class="main-card">
+        <main>
+          <!--Intro "In het kort"-->
+          <section class="page-intro">
+            <h2>In het kort:</h2>
+            <p>
+              Finland zit vol interessante, wonderschone en soms mystieke plekken. 
+              Het land van de duizend meren, het land van Santa Claus, het land met het noorderlicht. 
+              Je kunt het zo koud niet bedenken en de Finnen hebben er wat voor.
+              Wil je juist meer weten over de geschiedenis en cultuur van Finland? ga dan door naar de pagina: <a href="./finland-cultuur.html">cultuur</a>.
+            </p>
+          </section>
+
+          <hr />
+
+          <section class="grid-hotspots">
+
+            <!--Hotspots overzicht grid-->
+
+            <div class="grid-item item-1">
+              <h2>IJsvissen</h2>
+              <img src="./img/ice-fishing.jpg" alt="Foto IJvissen">
+              <p>
+                IJsvissen óf wakvissen is een vorm van vissen, waarbij men vissen probeert te vangen met een vishaak 
+                of speer door een gat is het ijs van bijvoorbeeld een bevroren meer of vijver. 
+              </p>
+              <p>
+                Deze vorm van vissen 
+                wordt tegenwoordig vooral beoefend als sportvissen. Er bestaan zelfs toernooien voor.
+              </p>
+              <p>
+                
+              </p>
+            </div>
+
+            <div class="grid-item item-2">
+              <h2>Santa's village</h2>
+              <img src="./img/santa_village.jpg" alt="Foto Santa/'s village">
+              <p>
+                <span lang="fi">Rovaniemi</span> is gelegen te noorden van Finland. Het is er tijdens de winter
+                vaak tot 25 graden onder nul én is met een dik pak snel een waar winter wonderland. 
+              </p>
+              <p>
+                In <span lang="fi">Rovaniemi</span> kun je zelf binnenstappen in "Santa's village". 
+                Je kunt je eigen kerstkaart versturen regelrecht vanuit met een échte stempel van de kerstman. 
+                De rendieren staan klaar voor een rondje en overal lopen elfen rond om jou te voorzien van alle
+                informatie over het dorp. 
+              </p>
+            </div>
+
+            <div class="grid-item item-3">
+              <h2>Aurora hunting</h2>
+              <img src="./img/aurora.jpg" alt="Foto aurora">
+              <p>
+                Een<span lang="en">Aurora</span> óf noorderlicht is een uniek lichtverschijnsel dat op hoge 
+                geografische breedtes bij duisternis kan worden waargenomen. Het zien ervan is bijna een mystieke
+                ervaring. Als het noorderlicht zich voordoet, zien we vaak een lichte gloed of is het licht zichtbaar 
+                als bewegende bogen. Ga voor meer informatie naar <a href="https://www.27vakantiedagen.nl/naar-het-noorderlicht-reizen-hoe-wat-waar-en-wanneer-check-de-fotos">www.27vakantiedagen.nl</a>.
+              </p>
+              <p>
+               
+              </p>
+            </div>
+
+            <div class="grid-item item-4">
+              <h2>Tocht op sneeuwschoenen</h2>
+              <img src="./img/snow_shoes.jpg" alt="Foto sneeuwwandeling">
+              <p>
+                Als kind heb je ze vast vaak verward met je tennisracket. 
+                Sneeuwschoenen zoals ze worden genoemd worden gebruikt om op dikke
+                lagen sneeuw fatsoenlijk te kunnen lopen. Zonder de schoenen, zak je hier
+                namelijk makkelijk doorheen. Met zulke schoenen kun je geweldige tochten maken, 
+                die leiden toch indrukwekkende en betoverende beelden van de natuur in een 
+                dik pak sneeuw. 
+              </p>
+            </div>
+
+            <div class="grid-item item-5">
+              <h2>Vervoer per husky</h2>
+              <img src="./img/dogs.jpg" alt="Foto husky">
+              <p>
+                Met stip op één van menig bucketlist: de huskysafari Lapland. En dat is niet voor niets, 
+                want we kunnen beamen dat veel reizigers de huskyslee het absolute hoogtepunt van hun vakantie 
+                in Fins en Zweeds Lapland vinden. 
+              </p>
+              <p>
+                De huskysafari's hebben een ongekend uithoudingsvermogen en werden daarom al in vroegere tijdensingezet 
+                om sledes voor te trekken en zo als vervoersmiddel te dienen. Nog steeds wordt de huskyslede als praktisch 
+                vervoersmiddel ingezet door de zogenoemde 'musher': jongeren die het rijden met de honden willen leren. 
+              </p>
+            </div>
+
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!--Button up-->
+
+    <button class="button" onclick="goUp()">
+      Terug naar begin &nbsp; <i class="arrow up"> </i>
+    </button>
+
+    <!--Footer-->
+
+    <footer style="text-align: center;">
+      <p> © 2022 MAA = COUNTRY === FINNISH | email@email.com | Niet orginele content</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+            <a href="http://www.w3.org/Icons/valid-html20">
+              <img alt="Valid HTML2" src="http://www.w3.org/Icons/valid-html20.png">
+            </a>
+        </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  
+  </body>
+</html>

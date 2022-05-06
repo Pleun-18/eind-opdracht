@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Typisch Finland</title>
+  </head>
+
+  <!--Start Body-->
+
+  <body>
+    <!--Header + nav-->
+    <header>
+      <nav>
+        <img src="./img/logo.png" alt="" class="icon logo" onclick="goHome()"/>
+
+        <div id="hamburger-icon" class="hamburger-icon hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links hide-mobile">
+          <a href="index.html">Home</a>
+          <a class="current-page" href="./typisch.html">Typisch Fins</a>
+          <a href="./finland-hotspots.html">Hotspots</a>
+          <div class="dropdown">
+            <button class="dropdown-btn">Over Finland <i class="arrow down"></i></button>
+            <div class="dropdown-content">
+              <a href="./finland-cultuur.html" class="dropdown-item">Cultuur</a>
+              <a href="./finland-taal.html" class="dropdown-item">Taal</a>
+            </div>
+          </div>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!--Nav mobile-->
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="./scandinavie.html">Typisch Fins</a>
+        </li>
+        <li>
+          <a href="./finland-hotspots.html">Hotspots</a>
+        </li>
+        <li>
+          <a href="./finland-taal.html">Taal</a>
+        </li>
+        <li>
+          <a href="./finland-cultuur.html">Cultuur</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Header banner-->
+
+    <section id="banner">
+      <h2 class="banner-title">Typisch Fins</h2>
+    </section>
+
+    <div class="container-main">
+      <div class="main-card">
+        <main>
+          <!--Intro "In het kort"-->
+          <section class="page-intro">
+            <h2>In het kort:</h2>
+            <p>
+               Ga jij naar Finland toe of ben je dat binnenkort van plan en ben je benieuwd wat nou typisch Fins is? 
+               Op deze pagina vindt je "typisch Finse": Plekken, feestdagen, gerechten. Je kunt het zo gek niet bedenken. 
+               Voor meer informatie wordt er doorverwezen naar handig sites die jou verder helpen naar 
+               de start van jouw reis. Moch je iets cruciaals missen? dan kun je natuurlijk altijd <a href="./contact.html">mailen</a>. 
+            </p>
+          </section>
+
+          <hr /><!--Typisch Fins: Grid-->
+
+          <section>
+            <h2>Typische Finse:</h2>
+            <div class="figure-grid">
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img src="./img/Meren.jpg" srcset="./img/Meren.jpg 2x" alt="Foto Meren" />
+                  <div class="dropdown-content">
+                    <div class="desc">Bovenaanzicht van een meer</div>
+                  </div>
+                  <figcaption>
+                    <h2>Meren</h2>
+                    <p>
+                      Met bijna 170.000 meren is het ook niet zo gek dat Finland 'Het land van de duizend meren' wordt genoemd. In de zomer is het te gek aan een van de vele meren te kamperen en een kanotocht te maken. 
+                    </p>
+                    <a href="https://nl.frwiki.wiki/wiki/Lacs_de_Finlande">Meren op een rijtje >></a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img src="./img/sauna.jpg" srcset="./img/sauna.jpg 2x" alt="Foto Finse sauna" />
+                  <div class="dropdown-content">
+                    <div class="desc">Welke temperatuur kun jij aan?</div>
+                  </div>
+                  <figcaption>
+                    <h2>Sauna</h2>
+                    <p>
+                      In heel Finland kom je twee tot drie miljoen sauna's tegen, wat gelijk staat aan één sauna per twee of drie inwoners. Het maakt dan ook niet uit waar je in Finland bent, de optie om naar de sauna te gaan is er altijd. Zelfs de temperaturen per sauna zul je voor het kiezen hebben.
+                    </p>
+                    <a href="https://stefaniavanlieshout.com/finland-sauna-gewoontes/#:~:text=3.,op%20natuur%20of%20Fins%20design.">Over Finse sauna's >></a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img src="./img/salmiaki.jpg" srcset="./img/salmiaki.jpg 2x" alt="Foto salmiakki" />
+                  <div class="dropdown-content">
+                    <div class="desc">Voorbeeld Finse dropjes</div>
+                  </div>
+                  <figcaption>
+                    <h2>Salmiakki</h2>
+                    <p>
+                      Wist je dat drop ook veel wordt gegeten in Scandinavië en Finland? In Finland wordt salmiakki (salty liquorice) veel gegeten, in het Nederlands ook wel salmiakdrop genoemd. 
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Salty_liquorice">Over drop >></a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img src="./img/kampvuur.jpg" srcset="./img/kampvuur.jpg 2x" alt="Foto kampvuur" />
+                  <div class="dropdown-content">
+                    <div class="desc">Overal kun je kampvuurplekken tegenkomen</div>
+                  </div>
+                  <figcaption>
+                    <h2>Sausages bij een kampuurtje</h2>
+                    <p>
+                      Waar je ook in Finland bent: overal vind je wel een plek waar je kunt barbecueën bij het kampvuur. Deze plekken zijn openbaar en dus beschikbaar voor iedereen. Ook een goede plek voor de typische Finse sausage.
+                    </p>
+                    <a href="https://www.tasteatlas.com/most-popular-sausages-in-finland">De lekkerste worstjes >></a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img src="./img/moomins.jpg" srcset="./img/moomins.jpg 2x" alt="Foto moomins" />
+                  <div class="dropdown-content">
+                    <div class="desc">De Moomin familie</div>
+                  </div>
+                  <figcaption>
+                    <h2>Moomins</h2>
+                    <p>
+                      De moomins(trollen) zijn een oorspronkelijk uitgebracht in het Zweeds maar enorm bekend in Finland. Waar je ook kijkt, overal vind je wel een moomin-koffie winkel waar je ook merchandize kunt vinden van deze gezellige trollen.
+                    </p>
+                    <a href="https://www.moomin.com/en/blog/introduction-moomin-born/#ab6698c4">Meer moomin >></a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img src="./img/coffee.jpg" srcset="./img/coffee.jpg 2x" alt="Foto Finse koffie" />
+                  <div class="dropdown-content">
+                    <div class="desc">Bekend om de sterkte, maar niet altijd lekker</div>
+                  </div>
+                  <figcaption>
+                    <h2>Finse koffie</h2>
+                    <p>
+                      Wanneer je op safari gaat, bijvoorbeeld met husky's of sneeuwschoenen, wordt er vaak een koffiepauze ingelast. De koffie wordt in een zwarte pot op het kampvuur gezet. Terwijl je opwarmt, en wacht tot de koffie klaar is, geniet je van een Fins kaneelbroodje, genaamd Korvapuusti.
+                    </p>
+                    <a href="https://www.lapland.nl/eten-en-drinken">Over Finse koffie >></a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+        </main>
+      </div>
+    </div>
+
+    <!--Button up-->
+
+    <button class="button" onclick="goUp()">
+      Terug naar begin &nbsp; <i class="arrow up"> </i>
+    </button>
+
+    <!--Footer-->
+
+    <footer style="text-align: center;">
+      <p> © 2022 MAA = COUNTRY === FINNISH | email@email.com | Niet orginele content</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+            <a href="http://www.w3.org/Icons/valid-html20">
+              <img alt="Valid HTML2" src="http://www.w3.org/Icons/valid-html20.png">
+            </a>
+        </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    
+  </body>
+</html>

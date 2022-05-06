@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Cultuur Finland</title>
+  </head>
+
+  <!--Start Body-->
+
+  <body>
+    <!--Header + nav-->
+    <header>
+      <nav>
+        <img src="./img/logo.png" alt="" class="icon logo" onclick="goHome()"/>
+
+        <div id="hamburger-icon" class="hamburger-icon hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links hide-mobile">
+          <a href="index.html">Home</a>
+          <a href="./typisch.html">Typisch Fins</a>
+          <a href="./finland-hotspots.html">Hotspots</a>
+          <div class="dropdown">
+            <button class="dropdown-btn">Over Finland <i class="arrow down"></i></button>
+            <div class="dropdown-content">
+              <a href="./finland-cultuur.html" class="dropdown-item current-page">Cultuur</a>
+              <a href="./finland-taal.html" class="dropdown-item">Taal</a>
+            </div>
+          </div>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!--nav mobile-->
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="./typisch.html">Typisch Fins</a>
+        </li>
+        <li>
+          <a href="./finland-hotspots.html">Hotspots</a>
+        </li>
+        <li>
+          <a href="./finland-taal.html">Taal</a>
+        </li>
+        <li>
+          <a href="./finland-cultuur.html">Cultuur</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Header banner-->
+
+    <section id="banner">
+      <h2 class="banner-title">Finse cultuur</h2>
+    </section>
+
+    <div class="container-main">
+      <div class="main-card">
+        <main>
+          <!--Intro "In het kort"-->
+          <section class="page-intro">
+            <h2>In het kort:</h2>
+            <p>
+              De Sami (of Samen) zijn de inheemse bewoners van Lapland (Sápmi). Een van oorsprong nomadisch volk van jagers en verzamelaars. 
+              Zij leefden grotendeels van de rendieren die zij volgden op hun trek door een gebied dat zich uitstrekt over het uiterste noorden van Finland, 
+              Noorwegen, Zweden en een deel van Rusland. Er zijn geen politieke of geografische grenzen die deze mensen tot één volk maken.
+              <a href="https://www.lapland.nl/sami">Leer meer ></a>
+            </p>
+          </section>
+
+          <hr /><!--Grid verleden-->
+
+          <section>
+            <h2>Beweeg je muis en aanschouw het verleden:</h2>
+            <div class="figure-grid">
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img class="photo-sami" id="sami-1" src="./img/sami1.jpg" alt="Foto Sami" />
+                  <div class="dropdown-content">
+                    <p class="desc">Elke regio heeft zijn eigen vorm van klederdracht en afgebeelde symbolen. "Gákti" is een woord dat komt uit het Noord-Samische dialect en verwees in de oudheid enkel naar de bovenkleding óf tuniek. Vandaag de dag wordt het woord Gákti gebruikt voor de gehele dracht.</p>
+                  </div>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img class="photo-sami" id="sami-2" src="./img/fire_making.jpg" alt="Foto Sami" />
+                  <div class="dropdown-content">
+                    <p class="desc">Het maken van vuur is een van de oudste technieken om te overleven. Tijdens survivaltrips in onder meer Finland, heb je de mogelijkheid om met behulp van vuurstarters en "vespers" je eigen vuur te maken.</p>
+                  </div>
+                </figure>
+              </div>
+
+              <div class="container-hotspots">
+                <figure class="dropdown_info">
+                  <img class="photo-sami" id="sami-3" src="./img/onafhankelijk.jpg" alt="Foto Sami" />
+                  <div class="dropdown-content">
+                    <p class="desc">Finland was een deel van het Zweedse Rijk van 1200 tot 1809. In 1809 werd Finland veroverd door Rusland, met een personele unie tot gevolg tussen de twee landen. In 1918 werd de onafhankelijkheid van Finland erkend.</p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <hr /><!--List items Feestdagen-->
+
+          <section>
+            <h2>Feestdagen</h2>
+            <ul class="party-list">
+              <li><span>6 februari:</span><br> Runebergdag, op deze dag herdenken ze de Nationale Finse schrijver Johand Ludvis Runeberg.</li>
+              <li><span>28 februari:</span><br>Kalevala Dag, dit is de dag van de Finse cultuur.</li>
+              <li><span>1 mei:</span><br>Dag van de Arbeid, deze feestdag wordt ook in een paar andere Europese landen gevierd.</li>
+              <li><span>12 mei:</span><br>J.V. Snellman Dag. De dag van het Finse bewustzijn, dit is geen vrije dag in Finland, maar wel een feestdag.</li>
+              <li><span>20-26 juni:</span><br>Veel feesten verspreid over deze perioden om de geboorte van Johannes de Doper te herdenken.</li>
+              <li><span>10 oktober:</span><br>Aleksis Kivi Dag, dit is de dag van de Finse literatuur.</li>
+              <li><span>31 oktober:</span><br>Allerheiligen, dit is ook een vrije dag.</li>
+              <li><span>6 november:</span><br>De dag van het Zweedse Bewustzijn, dit wordt vooral gevierd door de Zweden die in Finland wonen.</li>
+              <li><span>6 december:</span><br>Finse Onafhankelijkheidsdag, dit is een vrije dag.</li>
+
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!--Button up-->
+
+    <button class="button" onclick="goUp()">
+      Terug naar begin &nbsp; <i class="arrow up"> </i>
+    </button>
+
+    <!--Footer-->
+
+    <footer style="text-align: center;">
+      <p> © 2022 MAA = COUNTRY === FINNISH | email@email.com | Niet orginele content</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+            <a href="http://www.w3.org/Icons/valid-html20">
+              <img alt="Valid HTML2" src="http://www.w3.org/Icons/valid-html20.png">
+            </a>
+        </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    
+  </body>
+</html>

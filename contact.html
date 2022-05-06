@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6NiAlgvtoezPaWS-R0VdtEXuTaE3g2tw&callback=myMap"></script>-->
+
+    <title>Contactpagina</title>
+  </head>
+
+  <!--Start Body-->
+  
+  <body onload="initMap()">
+    <header>
+      <nav>
+        <img src="./img/logo.png" alt="" class="icon logo" onclick="goHome()"/>
+
+        <div id="hamburger-icon" class="hamburger-icon hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-links hide-mobile">
+          <a href="index.html">Home</a>
+          <a href="./typisch.html">Typisch Fins</a>
+          <a href="./finland-hotspots.html">Hotspots</a>
+          <div class="dropdown">
+            <button class="dropdown-btn">Over Finland <i class="arrow down"></i></button>
+            <div class="dropdown-content">
+              <a href="./finland-cultuur.html" class="dropdown-item">Cultuur</a>
+              <a href="./finland-taal.html" class="dropdown-item">Taal</a>
+            </div>
+          </div>
+          <a class="current-page" href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!--Nav mobile-->
+
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-items">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="./typisch.html">Typisch Fins</a>
+        </li>
+        <li>
+          <a href="./finland-hotspots.html">Hotspots</a>
+        </li>
+        <li>
+          <a href="./finland-taal.html">Taal</a>
+        </li>
+        <li>
+          <a href="./finland-cultuur.html">Cultuur</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Header banner-->
+
+    <section>
+      <h2 class="validator">Map</h2>
+      <div id="map"></div>
+    </section>
+
+    <div class="container-main">
+      <div class="main-card">
+        <main>
+          <!--Intro "In het kort"-->
+          <section class="page-intro">
+            <h2>In het kort:</h2>
+              <p>
+                Finland is hét land van de duizenden meren. De Moomin komt uit Finland en koffie is vaak niet lekkerder dan in Nederland.
+                Maar er is nog veel meer te zien en te beleven. Zit je met vragen? Ga je binnenkort op reis?
+                of zoek je naar aanbevolen hotspots? Neem dan vooral contact met ons op via het volgende
+                contactformulier: 
+              </p>
+            </section>
+
+          <!--Formulier-->
+
+          <div class="container-form">
+            <form class="form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+              <h2>Mail en vergaar meer info over Finland </h2>
+
+              <label for="fullname">
+                <strong>Jouw naam</strong>
+              </label>
+              <input
+                class="form-field"
+                placeholder="Jan Jansen"
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+              />
+
+              <label for="email"><strong>Email</strong></label>
+              <input
+                class="form-field"
+                placeholder="Example@email.com"
+                type="text"
+                id="email"
+                name="email"
+                required
+              />
+
+              <label for="telephone"><strong>Telefoonnummer:</strong> </label>
+              <input
+                class="form-field"
+                placeholder="06-12345678"
+                type="tel"
+                id="telephone"
+                name="telephone"
+              />
+
+              <label for="question"><strong>Jouw vraag:</strong></label>
+              <textarea
+                class="form-field"
+                placeholder="Elke vraag die je te binnen schiet..."
+                name="question"
+                id="question"
+                required
+              ></textarea>
+
+              <input class="input-button" type="submit" value="Verstuur" />
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!--Button up-->
+
+    <button class="button" onclick="goUp()">
+      Terug naar begin &nbsp; <i class="arrow up"> </i>
+    </button>
+
+    <!--Footer-->
+
+    <footer style="text-align: center;">
+      <p> © 2022 MAA = COUNTRY === FINNISH | email@email.com | Niet orginele content</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+            <a href="http://www.w3.org/Icons/valid-html20">
+              <img alt="Valid HTML2" src="http://www.w3.org/Icons/valid-html20.png">
+            </a>
+        </p>
+    </footer>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6NiAlgvtoezPaWS-R0VdtEXuTaE3g2tw&callback=initMap&v=weekly"
+      async
+    ></script>
+
+    <script src="./js/script.js"></script>
+    
+  </body>
+</html>
