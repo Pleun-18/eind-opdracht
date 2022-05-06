@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Finse hotspots</title>
@@ -25,7 +26,7 @@
 
         <div class="nav-links hide-mobile">
           <a href="index.html">Home</a>
-          <a  href="./typisch.html">Typisch Fins</a>
+          <a  href="./finland-typisch.html">Typisch Fins</a>
           <a class="current-page" href="./finland-hotspots.html">Hotspots</a>
           <div class="dropdown">
             <button class="dropdown-btn">Over Finland <i class="arrow down"></i></button>
@@ -48,7 +49,7 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="./typisch.html">Typisch Fins</a>
+          <a href="./finland-typisch.html">Typisch Fins</a>
         </li>
         <li>
           <a href="./finland-hotspots.html">Hotspots</a>
@@ -68,7 +69,7 @@
     <!--Header banner-->
 
     <section id="banner">
-      <h2 class="banner-title">Finse hotspots</h2>
+      <h1 class="banner-title">Finse hotspots</h1>
     </section>
 
     <div class="container-main">
@@ -76,6 +77,7 @@
         <main>
           <!--Intro "In het kort"-->
           <section class="page-intro">
+            <h2 class="validator">Page intro</h2>
             <h2>In het kort:</h2>
             <p>
               Finland zit vol interessante, wonderschone en soms mystieke plekken. 
@@ -87,10 +89,89 @@
 
           <hr />
 
+          <h2>Top 9 Hotspots in Finland</h2>
+          <section class="section-gallery">
+            <div class="hide-desktop">
+              <h2 class="validator">Famous hotspots</h2>
+              <div class="gallery-hotspots">
+                <h3 class="blok blok1">9) Milkshake Mocha</h3>
+                <h3 class="blok blok2">8) Frappuchino Espresso</h3>
+                <h3 class="blok blok3">7) Iced Coffee</h3>
+                <h3 class="blok blok4">6) Latt&#233; Syrup & Cream</h3>
+                <h3 class="blok blok5">5) Milkshake Hazelnut</h3>
+                <h3 class="blok blok6">4) Flat White</h3>
+                <h3 class="blok blok7">3) Crushed Ice Machiatto</h3>
+                <h3 class="blok blok8">2) Milkshake Vanilla & Coffee</h3>
+                <h3 class="blok middle">1) Frappuchino Kopi-Luwak</h3>
+              </div>
+            </div>
+
+            <div class="hide-mobile">
+              <div class="gallery-hotspots">
+                <div class="blok blok1">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-asterisk"></i>
+                    <h3>1) Santa Claus Village in Rovaniemi</h3>
+                  </div>
+                </div>
+                <div class="blok blok2">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-ice-lolly"></i>
+                    <h3>2) Särkänniemi Adventure Park</h3>
+                  </div>
+                </div>
+                <div class="blok blok3">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-sunglasses"></i>
+                    <h3>3) Levi Ski Resort</h3>
+                  </div>
+                </div>
+                <div class="blok blok4">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-education"></i>
+                    <h3>4) Arktikum Science Center</h3>
+                  </div>
+                </div>
+                <div class="blok blok5">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-camera"></i>
+                    <h3>5) Helsinki Cathedral</h3>
+                  </div>
+                </div>
+                <div class="blok blok6">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-tree-conifer"></i>
+                    <h3>6) Urho Kekkonen National Park</h3>
+                  </div>
+                </div>
+                <div class="blok blok7">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-camera"></i>
+                    <h3>7) Suomenlinna Fortress</h3>
+                  </div>
+                </div>
+                <div class="blok blok8">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-tree-deciduous"></i>
+                    <h3>8) Porvoo Old Town</h3>
+                  </div>
+                </div>
+                <div class="blok middle">
+                  <div class="gallery-text">
+                    <i class="glyphicon glyphicon-asterisk"></i>
+                    <h3>9) Snow Castle in Kemi</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <!--Hotspots overzicht grid-->
+          <h2>Uitgelicht hotspots:</h2>
           <section class="grid-hotspots">
-
-            <!--Hotspots overzicht grid-->
-
+            <h2 class="validator">Highlighted</h2>
             <div class="grid-item item-1">
               <h2>IJsvissen</h2>
               <img src="./img/ice-fishing.jpg" alt="Foto IJvissen">
@@ -172,7 +253,7 @@
     <!--Button up-->
 
     <button class="button" onclick="goUp()">
-      Terug naar begin &nbsp; <i class="arrow up"> </i>
+      <i class="arrow up"> </i>
     </button>
 
     <!--Footer-->

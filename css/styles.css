@@ -17,6 +17,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
   scroll-behavior: smooth;
 }
 
@@ -50,16 +51,29 @@ a:hover {
   border-block-end: 3px solid var(--yellow);
 }
 
-h1,
-h2,
+h1 {
+  font-family: var(--font);
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 h3 {
   font-family: var(--font);
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 iframe{
   width: 98%;
   height: 98%;
+}
+
+.glyphicon{
+  font-size: 18px;
 }
 
 
@@ -106,6 +120,91 @@ nav div h2 {
 .logoBox p{
   font-weight: 600;
   margin-top: -10px;
+}
+
+/* ------------------------------------------------------Animation famous hotspots------------------------------------------------------ */
+
+.gallery-hotspots {
+  height: 20vh;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "a b c"
+    "h m d"
+    "g f e";
+  grid-template-columns: 150px minmax(auto, 150px) 150px;
+  grid-template-rows: repeat(3, 33%);
+  margin-block-end: 3rem;
+}
+
+.gallery-text {
+  padding: 1px;
+}
+
+@keyframes gallery-hotspots {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
+.blok {
+  padding: 4px;
+  background-color: grey;
+  animation: gallery-hotspots 700ms ease-out;
+  animation-fill-mode: backwards;
+  text-align: center;
+  margin: -7px;
+  line-height: 1.2rem;
+}
+.blok1 {
+  grid-area: a;
+  animation-delay: var(--delay);
+}
+.blok2 {
+  grid-area: b;
+  animation-delay: calc(var(--delay) * 2);
+}
+.blok3 {
+  grid-area: c;
+  animation-delay: calc(var(--delay) * 3);
+}
+.blok4 {
+  grid-area: d;
+  animation-delay: calc(var(--delay) * 4);
+}
+.blok5 {
+  grid-area: e;
+  animation-delay: calc(var(--delay) * 5);
+}
+.blok6 {
+  grid-area: f;
+  animation-delay: calc(var(--delay) * 6);
+}
+.blok7 {
+  grid-area: g;
+  animation-delay: calc(var(--delay) * 7);
+}
+.blok8 {
+  grid-area: h;
+  animation-delay: calc(var(--delay) * 8);
+}
+.middle {
+  grid-area: m;
+  animation-delay: calc(var(--delay) * 9);
+}
+
+.section-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block-end: 1rem;
 }
 
 
@@ -385,7 +484,6 @@ footer strong {
   margin-block-start: 0;
   color: var(--yellow);
   line-height: 1.2;
-  font-size: 2rem;
   animation: fadeIn linear 0.5s;
 }
 
@@ -588,13 +686,13 @@ figcaption h2 {
 .button {
   align-self: flex-end;
   color: var(--black);
-  width: 180px;
   padding: 10px 15px;
-  background-color: var(--grey);
+  background-color: #ffffff45;
   font-family: var(--font);
   font-weight: 600;
   border: 4px solid rgb(50, 50, 50);
   border-radius: 10px;
+  box-shadow: 1px 1px 3px gray;
   cursor: pointer;
 }
 
@@ -744,18 +842,26 @@ textarea {
   
   @media (min-width: 768px) {
 
-    h1,
-    h2,
+    h1 {
+      font-family: var(--font);
+      font-size: 1.6rem;
+    }
+    
+    h2 {
+      font-family: var(--font);
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    
     h3 {
       font-family: var(--font);
-      font-size: 22px;
+      font-size: 1rem;
     }
 
     nav > p::before {
       margin-left: -80%;
     }
 
-    /* Footer */
     footer {
       flex-direction: row;
       justify-content: space-between;
@@ -768,6 +874,12 @@ textarea {
       grid-template-areas:
         "h h"
         "f f";
+    }
+
+    .grid-item img{
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
 
     .grid-videos{
@@ -906,7 +1018,6 @@ textarea {
     .photo-grid {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(1, auto);
-      align-items: baseline;
     }
   
     .parent-1 {
@@ -967,6 +1078,28 @@ textarea {
 
     .overlay-1 {
       margin-block-start: 0px;
+    }
+
+    .gallery-hotspots {
+        height: 40vh;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-areas:
+          "a b c"
+          "h m d"
+          "g f e";
+        grid-template-columns: 300px minmax(auto, 300px) 300px;
+    }
+
+    .blok {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .blok {
+      line-height: 1rem;
+      font-size: 1rem !important;
     }
   }
   
