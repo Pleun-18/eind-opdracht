@@ -15,7 +15,7 @@
 
   // Klik == terug naar homepage
   goHome = () => {
-    window.location.href = "./index.html";
+    window.location.href = "../HTML-CSS/index.html";
   };
 
   // Button terug omhoog
